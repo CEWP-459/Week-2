@@ -14,3 +14,9 @@ function init() {
     sum();
 }
 init();
+
+//function parameters
+function greeting($name, $course) {
+    echo "\nHi $name, welcome to $course!\n";
+}
+greeting("KS", "CEWP 459");
