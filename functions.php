@@ -1,7 +1,5 @@
 <?php
 
-error_reporting(E_ALL);
-
 //define a function
 function say_something() {
     echo "Hi, welcome to the world of PHP!\n";
@@ -50,9 +48,10 @@ echo calculator(5, 0, '/') . "\n";
 echo calculator(5, 988, '-') . "\n";
 
 //scope
+$x = "out"; //global scope
 function convert() {
     global $x;
-    $x = "in";
+    $x = "in"; //local scope
 }
 echo "1" . $x . "\n";
 convert();
