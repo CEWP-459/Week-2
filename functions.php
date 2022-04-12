@@ -49,3 +49,12 @@ function calculator($a, $b, $operation) {
 echo calculator(5, 0, '/');
 echo calculator(5, 988, '-');
 
+//scope
+$x = "out";
+function convert() {
+    $x = "in";
+}
+echo $x;
+convert();
+echo $x;
+
