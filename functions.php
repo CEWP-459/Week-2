@@ -50,12 +50,12 @@ echo calculator(5, 0, '/') . "\n";
 echo calculator(5, 988, '-') . "\n";
 
 //scope
-$x = "out";
-function convert($x) {
-    return $x = "in";
+function convert() {
+    global $x;
+    $x = "in";
 }
-echo $x . "\n";
-$x = convert($x);
-echo $x . "\n";
+echo "1" . $x . "\n";
+convert();
+echo "2" . $x . "\n";
 
 
