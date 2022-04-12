@@ -46,15 +46,16 @@ function calculator($a, $b, $operation) {
     }
 }
 
-echo calculator(5, 0, '/');
-echo calculator(5, 988, '-');
+echo calculator(5, 0, '/') . "\n";
+echo calculator(5, 988, '-') . "\n";
 
 //scope
 $x = "out";
-function convert() {
-    $x = "in";
+function convert($x) {
+    return $x = "in";
 }
-echo $x;
-convert();
-echo $x;
+echo $x . "\n";
+$x = convert($x);
+echo $x . "\n";
+
 
