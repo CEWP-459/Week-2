@@ -28,3 +28,15 @@ echo $string;
 echo "<br>";
 echo strtolower($string);
 echo "<br>";
+
+//Array Functions
+$array = [23, 9, 0, 2683, 323, 4, 102];
+echo max($array);
+echo "<br>";
+echo min($array);
+echo "<br>";
+print_r($array);
+echo "<br>";
+sort($array);
+print_r($array);
+echo "<br>";
